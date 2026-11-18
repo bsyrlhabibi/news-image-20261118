@@ -6,7 +6,7 @@
 
 A broadsheet front page that sums up the whole of Wednesday 18 November 2026 in a single 1024×1024 image: six lead stories drawn as bold flat-vector scenes, plus an "Also Today" strip with three more.
 
-The leads: the Trump–Xi–Putin summit in Shenzhen; Iran and the US trading blows across the Gulf; Russian strikes on Odesa's historic centre; Hakeem Jeffries nominated for Speaker in Washington; Nvidia's revenue doubling on soaring AI chip demand; and two armies massing on the Ethiopia–Eritrea border. The strip adds Cyclone Akvan, Voyager 1 reaching one light-day from Earth, and critics hailing GTA VI on its launch eve. Every story was cross-checked in at least two reputable outlets reporting that day, and the page names the day in its masthead.
+The leads: the Trump–Xi–Putin summit in Shenzhen; Iran and the US trading blows across the Gulf, with a tanker struck in Hormuz and one crewman missing; Russian strikes on Odesa's historic centre; Hakeem Jeffries nominated for Speaker in Washington; Nvidia's revenue doubling on soaring AI chip demand; and Israel's first broad ground offensive in central Gaza in a year, sending families fleeing. The strip adds Cyclone Akvan bearing down on India's east coast, two armies massing on the Ethiopia–Eritrea border (reports of clashes disputed), and critics hailing GTA VI on its launch eve. Every story was cross-checked in at least two reputable outlets reporting that day, and the page names the day in its masthead.
 
 `main.ts` copies the shipped `entry.png` to the output directory, byte for byte.
 
