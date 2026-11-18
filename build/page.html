@@ -7,7 +7,7 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: 1024px; height: 1024px; }
   body {
-    background: #f8f3e6;
+    background: #f6efdb;
     color: #191914;
     font-family: Georgia, 'Times New Roman', serif;
     padding: 22px 30px 16px 30px;
@@ -33,37 +33,37 @@
   .kicker { font-size: 13.5px; font-weight: bold; letter-spacing: 2.5px; color: #b03327; }
   .explainer { color: #33302a; }
 
-  .lead { flex-direction: row; height: 216px; margin-bottom: 10px; background: #f3e5c3; }
+  .lead { flex-direction: row; height: 216px; margin-bottom: 10px; background: #f0dfae; }
   .lead .scene { flex: 0 0 478px; border-right: 2.2px solid #191914; }
   .lead .text { padding: 14px 18px 10px 18px; }
-  .lead .kicker { font-size: 15px; }
-  .lead h1 { font-size: 37px; line-height: 1.07; padding: 6px 0 8px 0; }
-  .lead .explainer { font-size: 18.5px; line-height: 1.32; }
+  .lead .kicker { font-size: 15.5px; }
+  .lead h1 { font-size: 38px; line-height: 1.07; padding: 6px 0 8px 0; }
+  .lead .explainer { font-size: 19px; line-height: 1.3; }
 
   .row2 { display: flex; gap: 10px; margin-bottom: 10px; }
   .row2 .panel { flex: 1; height: 230px; }
   .row2 .scene { height: 92px; border-bottom: 2.2px solid #191914; }
   .row2 .text { padding: 8px 13px 6px 13px; }
-  .row2 h2 { font-size: 23.5px; line-height: 1.1; padding: 3px 0 4px 0; }
-  .row2 .explainer { font-size: 15px; line-height: 1.24; }
+  .row2 h2 { font-size: 24.5px; line-height: 1.1; padding: 3px 0 4px 0; }
+  .row2 .explainer { font-size: 15.5px; line-height: 1.24; }
 
   .row3 { display: flex; gap: 10px; margin-bottom: 10px; }
   .row3 .panel { flex: 1; height: 218px; }
   .row3 .scene { height: 82px; border-bottom: 2.2px solid #191914; }
   .row3 .text { padding: 7px 12px 5px 12px; }
-  .row3 .kicker { font-size: 12.5px; }
-  .row3 h2 { font-size: 20.5px; line-height: 1.1; padding: 3px 0 4px 0; }
-  .row3 .explainer { font-size: 14px; line-height: 1.24; }
+  .row3 .kicker { font-size: 13px; }
+  .row3 h2 { font-size: 21.5px; line-height: 1.1; padding: 3px 0 4px 0; }
+  .row3 .explainer { font-size: 14.5px; line-height: 1.24; }
 
   .scene svg { display: block; width: 100%; height: 100%; }
 
   /* ---------- also today strip ---------- */
-  .strip { border: 2.2px solid #191914; background: #efe9d8; padding: 8px 14px 7px 14px; margin-bottom: 9px; }
+  .strip { border: 2.2px solid #191914; background: #ece1c8; padding: 8px 14px 7px 14px; margin-bottom: 9px; }
   .strip-title { font-size: 14.5px; font-weight: bold; letter-spacing: 3.5px; color: #b03327; padding-bottom: 5px; }
   .strip-items { display: flex; gap: 18px; }
   .strip-item { flex: 1; display: flex; gap: 10px; align-items: flex-start; }
   .strip-item .pic { flex: 0 0 54px; }
-  .strip-item p { font-size: 14.5px; line-height: 1.28; color: #33302a; }
+  .strip-item p { font-size: 15px; line-height: 1.27; color: #33302a; }
   .strip-item b { color: #191914; }
 
   .footer { text-align: center; font-size: 12.5px; letter-spacing: 1.6px; color: #5c584c; }
@@ -80,71 +80,79 @@
   <section class="panel lead">
     <div class="scene">
       <svg viewBox="0 0 478 238" preserveAspectRatio="xMidYMid slice">
-        <rect width="478" height="238" fill="#f6dfae"/>
-        <circle cx="392" cy="52" r="30" fill="#e8873a"/>
+        <defs>
+          <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f8d493"/>
+            <stop offset="0.62" stop-color="#f0aa58"/>
+            <stop offset="1" stop-color="#e07f35"/>
+          </linearGradient>
+        </defs>
+        <rect width="478" height="238" fill="url(#dusk)"/>
+        <circle cx="388" cy="58" r="37" fill="#d95f16"/>
         <!-- skyline -->
-        <g fill="#2e3a46">
-          <rect x="0" y="150" width="52" height="88"/>
-          <rect x="58" y="128" width="40" height="110"/>
-          <rect x="104" y="160" width="60" height="78"/>
-          <rect x="170" y="112" width="34" height="126"/>
-          <rect x="212" y="70" width="26" height="168"/>
-          <polygon points="212,70 225,34 238,70"/>
-          <rect x="246" y="140" width="48" height="98"/>
-          <rect x="300" y="120" width="38" height="118"/>
-          <rect x="344" y="156" width="58" height="82"/>
-          <rect x="408" y="132" width="36" height="106"/>
-          <rect x="448" y="162" width="30" height="76"/>
+        <g fill="#1d2a38">
+          <rect x="0" y="142" width="52" height="96"/>
+          <rect x="58" y="120" width="40" height="118"/>
+          <rect x="104" y="154" width="60" height="84"/>
+          <rect x="170" y="104" width="34" height="134"/>
+          <rect x="212" y="62" width="26" height="176"/>
+          <polygon points="212,62 225,24 238,62"/>
+          <rect x="246" y="132" width="48" height="106"/>
+          <rect x="300" y="112" width="38" height="126"/>
+          <rect x="344" y="148" width="58" height="90"/>
+          <rect x="408" y="124" width="36" height="114"/>
+          <rect x="448" y="156" width="30" height="82"/>
         </g>
-        <g fill="#f6dfae">
-          <rect x="66" y="140" width="8" height="8"/><rect x="82" y="140" width="8" height="8"/><rect x="66" y="158" width="8" height="8"/><rect x="82" y="176" width="8" height="8"/>
-          <rect x="252" y="152" width="8" height="8"/><rect x="268" y="170" width="8" height="8"/><rect x="308" y="134" width="8" height="8"/><rect x="416" y="146" width="8" height="8"/><rect x="116" y="172" width="8" height="8"/>
+        <g fill="#f8d493">
+          <rect x="66" y="134" width="8" height="8"/><rect x="82" y="134" width="8" height="8"/><rect x="66" y="152" width="8" height="8"/><rect x="82" y="170" width="8" height="8"/>
+          <rect x="252" y="146" width="8" height="8"/><rect x="268" y="164" width="8" height="8"/><rect x="308" y="128" width="8" height="8"/><rect x="416" y="140" width="8" height="8"/><rect x="116" y="166" width="8" height="8"/>
+          <rect x="178" y="118" width="7" height="7"/><rect x="178" y="136" width="7" height="7"/><rect x="352" y="162" width="8" height="8"/>
         </g>
         <!-- water -->
-        <rect x="0" y="216" width="478" height="22" fill="#7fa8b8"/>
+        <rect x="0" y="214" width="478" height="24" fill="#4f8296"/>
         <!-- flag poles -->
-        <g stroke="#191914" stroke-width="4">
-          <line x1="66" y1="238" x2="66" y2="96"/>
-          <line x1="150" y1="238" x2="150" y2="84"/>
-          <line x1="330" y1="238" x2="330" y2="96"/>
+        <g stroke="#191914" stroke-width="4.5">
+          <line x1="60" y1="238" x2="60" y2="82"/>
+          <line x1="152" y1="238" x2="152" y2="68"/>
+          <line x1="336" y1="238" x2="336" y2="82"/>
         </g>
         <!-- US flag -->
         <g>
-          <rect x="66" y="96" width="76" height="42" fill="#fff"/>
-          <g fill="#b22234"><rect x="66" y="96" width="76" height="7"/><rect x="66" y="110" width="76" height="7"/><rect x="66" y="124" width="76" height="7"/></g>
-          <rect x="66" y="96" width="32" height="21" fill="#3c3b6e"/>
-          <g fill="#fff"><circle cx="73" cy="102" r="2"/><circle cx="82" cy="102" r="2"/><circle cx="91" cy="102" r="2"/><circle cx="73" cy="111" r="2"/><circle cx="82" cy="111" r="2"/><circle cx="91" cy="111" r="2"/></g>
+          <rect x="60" y="82" width="88" height="49" fill="#fff"/>
+          <g fill="#b22234"><rect x="60" y="82" width="88" height="8.2"/><rect x="60" y="98.3" width="88" height="8.2"/><rect x="60" y="114.7" width="88" height="8.2"/></g>
+          <rect x="60" y="82" width="37" height="24.5" fill="#3c3b6e"/>
+          <g fill="#fff"><circle cx="68" cy="89" r="2.3"/><circle cx="78" cy="89" r="2.3"/><circle cx="88" cy="89" r="2.3"/><circle cx="68" cy="98" r="2.3"/><circle cx="78" cy="98" r="2.3"/><circle cx="88" cy="98" r="2.3"/></g>
         </g>
         <!-- China flag -->
         <g>
-          <rect x="150" y="84" width="82" height="46" fill="#de2910"/>
-          <polygon fill="#ffde00" points="162,92 164.5,99 172,99 166,103.5 168,111 162,106.5 156,111 158,103.5 152,99 159.5,99"/>
-          <circle cx="176" cy="94" r="2.2" fill="#ffde00"/><circle cx="179" cy="101" r="2.2" fill="#ffde00"/><circle cx="179" cy="108" r="2.2" fill="#ffde00"/><circle cx="176" cy="114" r="2.2" fill="#ffde00"/>
+          <rect x="152" y="68" width="96" height="54" fill="#de2910"/>
+          <polygon fill="#ffde00" points="166,77 169.2,86.2 179,86.2 171.2,92 174.2,101.5 166,95.8 157.8,101.5 160.8,92 153,86.2 162.8,86.2"/>
+          <circle cx="184" cy="80" r="2.6" fill="#ffde00"/><circle cx="188" cy="88" r="2.6" fill="#ffde00"/><circle cx="188" cy="97" r="2.6" fill="#ffde00"/><circle cx="184" cy="104" r="2.6" fill="#ffde00"/>
         </g>
         <!-- Russia flag -->
         <g>
-          <rect x="330" y="96" width="76" height="42" fill="#fff"/>
-          <rect x="330" y="110" width="76" height="14" fill="#0039a6"/>
-          <rect x="330" y="124" width="76" height="14" fill="#d52b1e"/>
+          <rect x="336" y="82" width="88" height="49" fill="#fff"/>
+          <rect x="336" y="98.3" width="88" height="16.3" fill="#0039a6"/>
+          <rect x="336" y="114.7" width="88" height="16.3" fill="#d52b1e"/>
         </g>
       </svg>
     </div>
     <div class="text">
       <div class="kicker sans">SHENZHEN · CHINA</div>
       <h1>Three leaders, one table in Shenzhen</h1>
-      <p class="explainer">Trump lands in China to handshakes with Xi and Putin. On Thursday the three men meet together for the first time, at the APEC summit.</p>
+      <p class="explainer">Trump lands in China to handshakes with Xi and Putin. Thursday brings their first-ever three-way meeting, at the APEC summit.</p>
     </div>
   </section>
 
   <!-- ROW 2 -->
   <div class="row2">
-    <section class="panel" style="background:#dcebf0">
+    <section class="panel" style="background:#cfe2ec">
       <div class="scene">
         <svg viewBox="0 0 460 104" preserveAspectRatio="xMidYMid slice">
-          <rect width="460" height="104" fill="#f3ddba"/>
-          <rect x="0" y="62" width="460" height="42" fill="#8fb8c4"/>
+          <rect width="460" height="104" fill="#eecfa0"/>
+          <rect x="0" y="62" width="460" height="42" fill="#6fa3b5"/>
           <!-- island -->
-          <path d="M70 62 Q150 30 235 62 Z" fill="#d9b878"/>
+          <path d="M70 62 Q150 30 235 62 Z" fill="#cfa453"/>
           <rect x="138" y="38" width="26" height="14" fill="#5c584c"/>
           <!-- burst on island -->
           <g fill="#e4572e">
@@ -167,14 +175,14 @@
       <div class="text">
         <div class="kicker sans">THE GULF · KUWAIT &amp; BAHRAIN</div>
         <h2>Iran and America trade blows across the Gulf</h2>
-        <p class="explainer">After US strikes on Qeshm Island, Iran hit a US base in Kuwait and sites in Bahrain — its first attack there in two months.</p>
+        <p class="explainer">After US strikes on Qeshm Island, Iran hit a US base in Kuwait and sites in Bahrain — a first in two months.</p>
       </div>
     </section>
 
-    <section class="panel" style="background:#ece5d3">
+    <section class="panel" style="background:#e7dbbc">
       <div class="scene">
         <svg viewBox="0 0 460 104" preserveAspectRatio="xMidYMid slice">
-          <rect width="460" height="104" fill="#e9e2cf"/>
+          <rect width="460" height="104" fill="#e2d3ac"/>
           <!-- smoke -->
           <g fill="#8d887a">
             <circle cx="330" cy="26" r="13"/><circle cx="352" cy="16" r="17"/><circle cx="378" cy="10" r="13"/><circle cx="322" cy="40" r="10"/>
@@ -188,7 +196,7 @@
           <!-- historic building -->
           <g>
             <rect x="120" y="46" width="220" height="58" fill="#f4ecd8" stroke="#191914" stroke-width="2.5"/>
-            <polygon points="112,46 348,46 230,24" fill="#b03327"/>
+            <polygon points="112,46 348,46 230,24" fill="#9c2a20"/>
             <g fill="#2e3a46">
               <path d="M140 92 v-26 a9 9 0 0 1 18 0 v26 Z"/>
               <path d="M182 92 v-26 a9 9 0 0 1 18 0 v26 Z"/>
@@ -211,26 +219,26 @@
       <div class="text">
         <div class="kicker sans">ODESA · UKRAINE</div>
         <h2>Russian strikes batter Odesa's old town</h2>
-        <p class="explainer">Drones struck the UNESCO-protected centre three times in a morning. Four were killed, and rescuers were targeted too.</p>
+        <p class="explainer">Drones hit the UNESCO-protected centre three times in one morning; four killed, rescuers targeted.</p>
       </div>
     </section>
   </div>
 
   <!-- ROW 3 -->
   <div class="row3">
-    <section class="panel" style="background:#e3e7f2">
+    <section class="panel" style="background:#d5ddf0">
       <div class="scene">
         <svg viewBox="0 0 300 88" preserveAspectRatio="xMidYMid slice">
-          <rect width="300" height="88" fill="#e3e7f2"/>
+          <rect width="300" height="88" fill="#d5ddf0"/>
           <!-- capitol -->
-          <g fill="#31456b" transform="translate(0 3)">
+          <g fill="#27395c" transform="translate(0 3)">
             <path d="M96 44 a54 30 0 0 1 108 0 Z"/>
             <rect x="144" y="6" width="12" height="12"/>
             <circle cx="150" cy="5" r="3.5"/>
             <rect x="82" y="44" width="136" height="8"/>
             <rect x="90" y="52" width="120" height="36"/>
           </g>
-          <g fill="#e3e7f2"><rect x="100" y="58" width="7" height="24"/><rect x="118" y="58" width="7" height="24"/><rect x="136" y="58" width="7" height="24"/><rect x="154" y="58" width="7" height="24"/><rect x="172" y="58" width="7" height="24"/><rect x="190" y="58" width="7" height="24"/></g>
+          <g fill="#d5ddf0"><rect x="100" y="58" width="7" height="24"/><rect x="118" y="58" width="7" height="24"/><rect x="136" y="58" width="7" height="24"/><rect x="154" y="58" width="7" height="24"/><rect x="172" y="58" width="7" height="24"/><rect x="190" y="58" width="7" height="24"/></g>
           <!-- gavel -->
           <g transform="rotate(28 238 30)">
             <rect x="196" y="22" width="62" height="11" rx="4" fill="#8a5a2b"/>
@@ -245,14 +253,14 @@
       <div class="text">
         <div class="kicker sans">WASHINGTON · UNITED STATES</div>
         <h2>Jeffries nominated — a first for the House</h2>
-        <p class="explainer">House Democrats chose Hakeem Jeffries, 251–11. In January he becomes the first Black Speaker of the House.</p>
+        <p class="explainer">Democrats chose Hakeem Jeffries 251–11; in January he becomes the first Black Speaker.</p>
       </div>
     </section>
 
-    <section class="panel" style="background:#e4edda">
+    <section class="panel" style="background:#dbecc9">
       <div class="scene">
         <svg viewBox="0 0 300 88" preserveAspectRatio="xMidYMid slice">
-          <rect width="300" height="88" fill="#e4edda"/>
+          <rect width="300" height="88" fill="#dbecc9"/>
           <!-- traces -->
           <g stroke="#7d9b6a" stroke-width="3" fill="none">
             <path d="M20 20 H96 V40"/><path d="M20 68 H96 V52"/><path d="M280 16 H204 V38"/><path d="M280 72 H204 V54"/>
@@ -264,8 +272,8 @@
               <rect x="96" y="6" width="10" height="12"/><rect x="118" y="6" width="10" height="12"/><rect x="140" y="6" width="10" height="12"/><rect x="162" y="6" width="10" height="12"/><rect x="184" y="6" width="10" height="12"/>
               <rect x="96" y="70" width="10" height="12"/><rect x="118" y="70" width="10" height="12"/><rect x="140" y="70" width="10" height="12"/><rect x="162" y="70" width="10" height="12"/><rect x="184" y="70" width="10" height="12"/>
             </g>
-            <rect x="92" y="16" width="116" height="56" rx="8" fill="#22331f"/>
-            <rect x="112" y="28" width="76" height="32" rx="5" fill="#38512f"/>
+            <rect x="92" y="16" width="116" height="56" rx="8" fill="#182615"/>
+            <rect x="112" y="28" width="76" height="32" rx="5" fill="#2f4a27"/>
           </g>
           <!-- up arrow -->
           <path d="M104 66 L158 40 L178 50 L214 20" fill="none" stroke="#59a83b" stroke-width="7"/>
@@ -274,16 +282,16 @@
       </div>
       <div class="text">
         <div class="kicker sans">SANTA CLARA · CALIFORNIA</div>
-        <h2>Nvidia soars, but Huang stays out</h2>
-        <p class="explainer">Soaring sales beat forecasts — but the board slams the door on reinstating ousted founder Jensen Huang.</p>
+        <h2>Nvidia soars on AI chip demand</h2>
+        <p class="explainer">Revenue doubled to $115.8bn in a year as AI chip demand soared; its $130bn outlook beat forecasts.</p>
       </div>
     </section>
 
-    <section class="panel" style="background:#f0e2c6">
+    <section class="panel" style="background:#eed9a8">
       <div class="scene">
         <svg viewBox="0 0 300 88" preserveAspectRatio="xMidYMid slice">
-          <rect width="300" height="88" fill="#f0e2c6"/>
-          <path d="M0 88 L0 52 Q70 30 140 56 L150 62 L160 56 Q230 30 300 52 L300 88 Z" fill="#c99e5f"/>
+          <rect width="300" height="88" fill="#eed9a8"/>
+          <path d="M0 88 L0 52 Q70 30 140 56 L150 62 L160 56 Q230 30 300 52 L300 88 Z" fill="#bd8f4c"/>
           <line x1="150" y1="8" x2="150" y2="88" stroke="#b03327" stroke-width="3" stroke-dasharray="8 6"/>
           <!-- left flag: Ethiopia -->
           <line x1="34" y1="70" x2="34" y2="14" stroke="#191914" stroke-width="3.5"/>
@@ -318,7 +326,7 @@
       <div class="text">
         <div class="kicker sans">ETHIOPIA–ERITREA BORDER</div>
         <h2>War fears on the Ethiopia–Eritrea border</h2>
-        <p class="explainer">Monitors say both armies have massed near Badme, within striking distance. Reports of clashes are disputed.</p>
+        <p class="explainer">Both armies have massed near Badme, monitors say. Reports of clashes are disputed.</p>
       </div>
     </section>
   </div>
@@ -336,7 +344,7 @@
             <path d="M4 50 L20 38 L34 46 L50 40" fill="none" stroke="#191914" stroke-width="3"/>
           </svg>
         </div>
-        <p><b>CYCLONE AKVAN.</b> A severe storm spins toward India's east coast. Eight Odisha districts are on high alert; landfall is expected on Friday.</p>
+        <p><b>CYCLONE AKVAN.</b> A severe storm nears India's east coast; eight Odisha districts on alert, landfall due Friday.</p>
       </div>
       <div class="strip-item">
         <div class="pic">
@@ -350,7 +358,7 @@
             <circle cx="49" cy="6" r="1.8" fill="#191914"/><circle cx="22" cy="8" r="1.5" fill="#191914"/><circle cx="40" cy="44" r="1.5" fill="#191914"/>
           </svg>
         </div>
-        <p><b>VOYAGER 1.</b> NASA's 1977 probe becomes the first human-made object one light-day from Earth. Its signals now take a full day to arrive.</p>
+        <p><b>VOYAGER 1.</b> NASA's 1977 probe is now one light-day from Earth — its signals take a full day to arrive.</p>
       </div>
       <div class="strip-item">
         <div class="pic">
@@ -365,7 +373,7 @@
             </g>
           </svg>
         </div>
-        <p><b>GTA VI.</b> Critics hail the new Grand Theft Auto a masterpiece on the eve of its launch, ending a 13-year wait for its fans.</p>
+        <p><b>GTA VI.</b> Critics hail the new Grand Theft Auto a masterpiece, ending fans' 13-year wait.</p>
       </div>
     </div>
   </div>
